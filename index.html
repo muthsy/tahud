@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="سياسة خصوصية تطبيق تعاهُد لحفظ القرآن الكريم ومراجعته: لا يجمع بيانات، وكل شيء على الجهاز.">
+<title>سياسة خصوصية تعاهُد</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+  /* وثيقة سياسة بعمود قراءة واحد، برأس بلون الشعار وبطاقة خلاصة؛ عربية أولاً ونسخة إنجليزية للمراجعين. */
+  :root {
+    --bg: #F7F3EA;
+    --surface: #FFFDF8;
+    --ink: #1E2B26;
+    --muted: #5C6B64;
+    --emerald: #0E5C48;
+    --gold: #B0832A;
+    --rule: #E3DCCB;
+    --font: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F1714; --surface: #16211D; --ink: #ECE6D8; --muted: #A7B3AD;
+      --emerald: #7BC8AE; --gold: #E1BC6A; --rule: #26352F; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F1714; --surface: #16211D; --ink: #ECE6D8; --muted: #A7B3AD;
+    --emerald: #7BC8AE; --gold: #E1BC6A; --rule: #26352F; color-scheme: dark;
+  }
+  body {
+    background: var(--bg); color: var(--ink); font-family: var(--font);
+    font-size: 17px; line-height: 1.85;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 32px 56px;
+  }
+  main { max-width: 44rem; margin: 0 auto; display: grid; gap: 28px; }
+  header { display: flex; align-items: center; gap: 16px; }
+  header svg { flex: none; width: 64px; height: 64px; }
+  h1 { margin: 0; font-size: 1.9rem; line-height: 1.3; color: var(--emerald); text-wrap: balance; }
+  .date { margin: 2px 0 0; color: var(--muted); font-size: 0.95rem; }
+  .summary {
+    background: var(--surface); border: 1px solid var(--rule); border-radius: 16px;
+    padding: 18px 20px; display: grid; gap: 10px;
+  }
+  .summary p { margin: 0; font-weight: 500; }
+  .summary ul { margin: 0; padding-inline-start: 1.2em; display: grid; gap: 4px; }
+  section { display: grid; gap: 6px; min-width: 0; }
+  h2 { margin: 0; font-size: 1.2rem; color: var(--ink); }
+  h2::before { content: "۞ "; color: var(--gold); }
+  p, li { margin: 0; }
+  ul { margin: 0; padding-inline-start: 1.3em; display: grid; gap: 6px; }
+  strong { color: var(--emerald); font-weight: 700; }
+  .perm { display: grid; gap: 10px; }
+  .perm div { border-top: 1px solid var(--rule); padding-top: 10px; }
+  .perm b { display: block; }
+  code { font-family: ui-monospace, Consolas, monospace; font-size: 0.9em; direction: ltr; unicode-bidi: embed; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 8px 0; width: 100%; }
+  .en { direction: ltr; text-align: left; display: grid; gap: 14px; font-size: 15.5px; line-height: 1.7; }
+  .en h2::before { content: ""; }
+  .en h2 { font-size: 1.1rem; }
+  footer { color: var(--muted); font-size: 0.95rem; }
+</style>
+
+</head>
+<body>
+<main dir="rtl" lang="ar">
+  <header>
+    <svg viewBox="0 0 1024 1024" role="img" aria-label="شعار تعاهد">
+      <rect width="1024" height="1024" rx="232" fill="#0E5C48"/>
+      <polygon fill="#D9AE4E" points="512.0,182.0 608.7,278.7 745.3,278.7 745.3,415.3 842.0,512.0 745.3,608.7 745.3,745.3 608.7,745.3 512.0,842.0 415.3,745.3 278.7,745.3 278.7,608.7 182.0,512.0 278.7,415.3 278.7,278.7 415.3,278.7"/>
+      <circle cx="512" cy="512" r="212" fill="#0E5C48"/>
+      <polygon fill="#FFF5DE" points="501,439.8 387,417 387,584.2 501,607"/>
+      <polygon fill="#FFF5DE" points="523,439.8 637,417 637,584.2 523,607"/>
+    </svg>
+    <div>
+      <h1>سياسة الخصوصية لتطبيق «تعاهُد»</h1>
+      <p class="date">تاريخ السريان: ٦ نوفمبر ٢٠٢٦</p>
+    </div>
+  </header>
+
+  <div class="summary">
+    <p>الخلاصة: «تعاهُد» لا يجمع أي بيانات شخصية، ولا يرسلها إلى أحد.</p>
+    <ul>
+      <li>لا حسابات، ولا تسجيل دخول، ولا إعلانات، ولا أدوات تحليل أو تتبّع.</li>
+      <li>كل محفوظك ومراجعاتك وإعداداتك تبقى على جهازك وحده.</li>
+      <li>الاتصال الوحيد بالإنترنت لتنزيل تلاوات القرّاء الصوتية.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>ما الذي يحفظه التطبيق، وأين</h2>
+    <p>يحفظ التطبيق على جهازك فقط: المقاطع التي تحفظها ومواعيد مراجعتها، وسجل مراجعاتك وأخطائك، وخطة الحفظ، والإشارات المرجعية، والإعدادات، والاسم الذي تختار أن نناديك به (اختياري). لا يُرسَل شيء من ذلك إلى المطوّر ولا إلى أي جهة أخرى.</p>
+  </section>
+
+  <section>
+    <h2>النسخ الاحتياطي</h2>
+    <ul>
+      <li>يحفظ التطبيق نسخة احتياطية يومية على جهازك.</li>
+      <li>إن كان «النسخ الاحتياطي من Google» مفعّلاً في إعدادات جوالك، فإن نظام أندرويد نفسه يرفع بيانات التطبيق إلى حسابك في Google لتستعيدها إن غيّرت جوالك. هذه خدمة من Google تخضع لسياستها، ولا يطّلع عليها المطوّر.</li>
+      <li>وإن صدّرت نسخة بنفسك فأنت من يختار أين تحفظها أو لمن ترسلها.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>الاتصال بالإنترنت</h2>
+    <p>يعمل المصحف والتطبيق كله دون إنترنت. يتصل التطبيق بموقع <code>everyayah.com</code> فقط حين تستمع إلى تلاوة أو تنزّلها، لجلب الملفات الصوتية للقرّاء. وككل اتصال بالإنترنت، يرى ذلك الخادم عنوان IP لجهازك عند الطلب؛ ولا يُرسل التطبيق معه أي بيانات عنك.</p>
+  </section>
+
+  <section>
+    <h2>الأذونات ولماذا نطلبها</h2>
+    <div class="perm">
+      <div><b>الأجهزة القريبة والبلوتوث</b>لميزة «التسميع مع رفيق»: يتصل هاتفك بهاتف رفيقك القريب مباشرة دون إنترنت. يُتبادل بين الهاتفين فقط: الاسم الذي اخترته، والمقطع الذي تسمّعه، وعلامات الأخطاء. لا يمر شيء من ذلك عبر أي خادم.</div>
+      <div><b>الموقع</b>تشترطه خدمات Google Play لاكتشاف الهواتف القريبة في ميزة التسميع مع رفيق. التطبيق لا يقرأ موقعك ولا يحفظه ولا يرسله، ولا يُطلب الإذن إلا حين تستخدم هذه الميزة.</div>
+      <div><b>الميكروفون</b>لميزة «تسجيل تلاوتي» حين تطلبها: يُحفظ التسجيل على جهازك فقط لتستمع إليه وتحذفه متى شئت.</div>
+      <div><b>الإشعارات</b>لتذكيرك بموعد المراجعة اليومية الذي تختاره. تُجدول التذكيرات على جهازك.</div>
+      <div><b>العمل في الخلفية</b>لإكمال تنزيل التلاوات حين تغلق التطبيق، مع إشعار يبيّن التقدم.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>سجل الأخطاء</h2>
+    <p>إن حدث خطأ في التطبيق يُسجَّل على جهازك في «سجل الأخطاء» داخل الإعدادات. لا يُرسل تلقائياً؛ وإن شئت نسخته وأرسلته بنفسك للمساعدة في الإصلاح.</p>
+  </section>
+
+  <section>
+    <h2>حذف بياناتك</h2>
+    <p>بياناتك ملكك: يمكنك محوها كلها من الإعدادات ← النسخ الاحتياطي ← «تصفير التطبيق»، أو بحذف التطبيق من جوالك. وتُحذف النسخة المرفوعة إلى حسابك من إعدادات Google في جوالك.</p>
+  </section>
+
+  <section>
+    <h2>الأطفال</h2>
+    <p>التطبيق مناسب لكل الأعمار، ولا يجمع بيانات من أحد، صغيراً كان أو كبيراً.</p>
+  </section>
+
+  <section>
+    <h2>التعديلات والتواصل</h2>
+    <p>إن تغيّرت هذه السياسة نحدّث هذه الصفحة وتاريخ سريانها. وللسؤال عنها: <strong>[بريد المطوّر]</strong></p>
+  </section>
+
+  <hr>
+
+  <div class="en" lang="en" dir="ltr">
+    <h2>Privacy Policy — Tahud (English summary)</h2>
+    <p><b>Effective:</b> 6 November 2026. Tahud is a Quran memorization and review app. It collects no personal data and shares nothing with the developer or any third party. There are no accounts, ads, analytics or trackers.</p>
+    <p><b>Data on your device.</b> Your memorized portions, review history, mistakes, plan, bookmarks, settings and optional display name are stored only on your device. A daily backup is kept on the device; if Google Backup is enabled on your phone, Android itself backs up the app's data to your Google account under Google's policy.</p>
+    <p><b>Internet.</b> The app works offline. It connects only to <code>everyayah.com</code> to stream or download recitation audio; that server sees your IP address as with any web request. No personal data is sent.</p>
+    <p><b>Permissions.</b> Nearby devices and Bluetooth: for "Recite with a partner", a direct phone-to-phone connection exchanging only your chosen name, the portion and mistake marks. Location: required by Google Play services to discover nearby phones; the app never reads, stores or sends your location. Microphone: only to record your own recitation, kept on the device. Notifications: daily review reminders scheduled on the device. Foreground service: to finish recitation downloads in the background.</p>
+    <p><b>Deleting data.</b> Use Settings → Backup → Reset the app, or uninstall the app. Contact: <b>[developer email]</b></p>
+  </div>
+
+  <footer>تعاهُد: احفظ القرآن وتعاهده.</footer>
+</main>
+</body>
+</html>
